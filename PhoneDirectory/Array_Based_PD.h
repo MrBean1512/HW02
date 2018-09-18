@@ -58,19 +58,21 @@ private:
 	public:
 		Directory_Entry() {} // Default no-argument constructor 
 		Directory_Entry(std::string the_name, std::string the_number) {
-			// constructor not implemented yet
+			name = the_name;
+			number = the_number;
 		}
-		std::string get_name() const { 
-			return ""; // method not implemented yet
+		std::string get_name() const {
+			return name; // method not implemented yet
 		}
 		std::string get_number() const {
-			return ""; // method not implemented yet
+			return number; // method not implemented yet
 		}
 		void set_number(const std::string& new_number) {
 			// method not implemented yet
 		}
 	private:
-
+		string name;
+		string number;
 	};
 
 	// Private Functions
@@ -91,7 +93,7 @@ private:
 	/** Removes the entry at the given index.
 		@param index The index of the entry to be removed
 		*/
-	void remove_entry(int index);
+	void remove_entry(int index); //idk why this is here, there is another remove_entry function on line 94. ~David
 
 	/** Creates an new array of directory entries with twice the
 		capacity of the current one.
