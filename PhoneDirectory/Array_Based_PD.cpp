@@ -123,6 +123,7 @@ string Phone_Directory::remove_entry(const string& name) // Exercise 1.7: please
 	{
 		for (int i = index; i < size - 1; i++)
 			the_directory[i] = the_directory[i + 1];
+		size--;
 		return the_directory[index].get_number();
 	}
 }
